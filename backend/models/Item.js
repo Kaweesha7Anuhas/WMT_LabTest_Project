@@ -22,6 +22,11 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Description is required"],
       trim: true,
     },
+    expiryDate: {
+      type: String,
+      required: [true, "Expiry Date is required"],
+      trim: true,
+    },
     imageUrl: {
       type: String,
       default: "",
