@@ -7,6 +7,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       category: "",
       price: "",
       description: "",
+      expiryDate: "",
       imageUrl: "",
     }
   );
@@ -48,6 +49,15 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
         name="description"
         rows="4"
         value={formData.description}
+        onChange={handleChange}
+        required
+      />
+
+      <label>Price</label>
+      <input
+        type="date"
+        name="expiryDate"
+        value={formData.expiryDate}
         onChange={handleChange}
         required
       />
